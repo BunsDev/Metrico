@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    transition: height 1s linear;
+}
+
+.visible {
+    opacity: 1;
+    height: fit-content;
+    transition: height 1s linear, opacity 1s linear;
+}
