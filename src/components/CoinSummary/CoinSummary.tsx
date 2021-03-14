@@ -8,7 +8,7 @@ export const CoinSummary = ({ coinMetricsData, coinProfileData }: TCoinSummaryPr
 	let pctChg;
 	let posNeg;
 	let pctChgColor;
-	// let sector;
+	let sector;
 
 	let name = coinProfileData ? (
 		coinProfileData.name
@@ -51,23 +51,19 @@ export const CoinSummary = ({ coinMetricsData, coinProfileData }: TCoinSummaryPr
 			'Loading...'
 		);
 
-	// if (coinProfileData) {
-	// 	// CHECK THAT THE COIN HAS A SECTOR, IF NOT, SET TO 'N/A'
-	// 	sector = coinProfileData.profile.general.overview.sector
-	// 		? coinProfileData.profile.general.overview.sector
-	// 		: 'N/A';
-	// }
+	if (coinProfileData) {
+		// CHECK THAT THE COIN HAS A SECTOR, IF NOT, SET TO 'N/A'
+		sector = coinProfileData.profile.general.overview.sector
+			? coinProfileData.profile.general.overview.sector
+			: 'N/A';
+	}
 
 	return (
 		<div className='coin-summary'>
-			<h4>{name}</h4>
+			<h3>{name}</h3>
 			<div className='coin-summary-data'>
 				<div className='coin-price'>{price}</div>
-				{/* <div className='detail-list'>
-					<ul>
-						<li>{sector}</li>
-					</ul>
-				</div> */}
+				<h5>{sector}</h5>
 			</div>
 		</div>
 	);
