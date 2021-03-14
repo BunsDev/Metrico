@@ -11,7 +11,8 @@ Though existing on a single page, users may browse through a vast array of crypt
 - Time Series Endpoint: https://data.messari.io/api/v1/assets/yfi/metrics/price/time-series?start=2021-01-01&end=2021-02-01&interval=1d
 - Metrics Endpoint: https://data.messari.io/api/v1/assets
 - Detailed Documentation: https://messari.io/api/docs
-# Contributing
+
+# Contributions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
