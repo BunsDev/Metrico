@@ -1,0 +1,20 @@
+{
+  "short_name": "Metrico",
+  "name": "Messari - Token Metrics",
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "sizes": "96x96 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "messari_icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
