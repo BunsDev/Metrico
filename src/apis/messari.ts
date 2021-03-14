@@ -20,7 +20,7 @@ export const fetchAssetProfileData = async (currentCoin: string, dispatch: Funct
 		return profile.data.data;
 	} catch (error) {
 		console.log(error);
-		dispatch({ type: "SET_ERROR_MSG", payload: `No profile data found for ${currentCoin}, please check your input or select an option from the list.` })
+		dispatch({ type: "SET_ERROR_MSG", payload: `${currentCoin} is not found.` })
 	}
 };
 
@@ -40,7 +40,7 @@ export const fetchAssetMetricsData = async (currentCoin: string, dispatch: Funct
 		return metrics.data.data;
 	} catch (error) {
 		console.log(error);
-		dispatch({ type: "SET_ERROR_MSG", payload: `No metrics data found for ${currentCoin}, please check your input or select an option from the list.` })
+		dispatch({ type: "SET_ERROR_MSG", payload: `${currentCoin} is not found.` })
 	}
 };
 
@@ -73,6 +73,6 @@ export const fetchAssetPriceData = async (
 		return daysTimestampClose;
 	} catch (error) {
 		console.log(error);
-		dispatch({ type: "SET_ERROR_MSG", payload: `No price data found for ${currentCoin}, please check your input or select an option from the list.` })
+		dispatch({ type: "SET_ERROR_MSG", payload: `${currentCoin} is not found.` })
 	}
 };
