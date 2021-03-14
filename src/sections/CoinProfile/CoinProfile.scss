@@ -6,7 +6,7 @@
 	grid-gap: 0.75rem;
 	padding: 0.25rem;
 	width: 97%;
-	margin: 0 auto;
+	margin: auto;
 
 	.coin-summary-cont,
 	.coin-description {
@@ -23,6 +23,7 @@
 		box-shadow: 2px 2px 5px 0px $logo-primary-light;
 		background-color: #faceff95;
 		border-radius: 5px;
+		text-align: center;
 	}
 
 	.coin-description {
@@ -91,8 +92,8 @@
 }
 
 .price-chart {
-    padding: 1rem 1rem;
-	min-width: 97%;
+    padding: 1rem 1rem 2rem 2rem;
+	min-width: 100%;
 	max-width: 1200px;
 	margin: auto;
 	min-height: 300px;
@@ -106,7 +107,7 @@
 	}
 
 	#line-chart {
-		width: 97% !important;
-		height: 97% !important;
+		width: 100% !important;
+		height: 100% !important;
 	}
 }

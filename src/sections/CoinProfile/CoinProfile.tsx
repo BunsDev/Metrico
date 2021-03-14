@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { CoinSummary } from '../../components/CoinSummary/CoinSummary';
 import { CoinImg } from '../../components/CoinImg/CoinImg';
 import { CoinDescription } from '../../components/CoinDescription/CoinDescription';
+import { CoinResources } from '../../components/CoinResources/CoinResources';
 import { Store } from '../../Store';
 import { CoinChart } from '../../components/CoinChart/CoinChart';
 import { setChartDataInterval } from '../../helpers/dateHelpers';
@@ -63,6 +64,7 @@ export const CoinProfile = (): JSX.Element => {
 		</div>
 		<CoinDescription coinProfileData={coinProfileData} />
 		<CoinChart chartData={chartData} today={today} numDaysPriceData={numDaysPriceData} setNumDaysPriceData={setNumDaysPriceData} />
+		<CoinResources coinProfileData={coinProfileData} />
 	</div></>) : <div>{errorMsg}</div>
 
 	return (
