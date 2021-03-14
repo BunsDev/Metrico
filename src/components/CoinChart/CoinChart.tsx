@@ -123,7 +123,7 @@ export const CoinChart = ({ chartData, numDaysPriceData, setNumDaysPriceData, to
                     <button className={`chart-btn ${selectedOption === '7' ? 'selected' : 'not-selected'}`} name='7' onClick={handleChange} value='7'>Week</button>
                     <button className={`chart-btn ${selectedOption === '30' ? 'selected' : 'not-selected'}`} name='30' onClick={handleChange} value='30'>Month</button>
                     <button className={`chart-btn ${selectedOption === '90' ? 'selected' : 'not-selected'}`} name='90' onClick={handleChange} value='90'>Quarter</button>
-                    <button className={`chart-btn ${selectedOption === '180' ? 'selected' : 'not-selected'}`} name='180' onClick={handleChange} value='180'>Semi-Annual</button>
+                    <button className={`chart-btn ${selectedOption === '180' ? 'selected' : 'not-selected'}`} name='180' onClick={handleChange} value='180'>Semi</button>
                 </div>
                 <p className='past-days'>Previous {numDaysPriceData} Days</p>
                 {/* <p className='max-days-note'>{numDaysPriceData === 265 ? "Metrico's current data source only provides a maximum of 265 days of data" : null}</p> */}
