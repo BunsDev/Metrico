@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p:first-child {
+	color: $logo-secondary;
+	font-size: 1.25rem;
+	line-height: 1;
+} 
