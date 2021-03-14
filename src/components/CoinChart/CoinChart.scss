@@ -3,20 +3,19 @@
 .interval-container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     justify-content: center;
     width: fit-content;
-    padding: 0.2rem;
     border-radius: 5px;
 
     .interval-label {
         font-size: 0.9rem;
-        margin: 0.3rem
+        margin: 0;
     }
 }
 
 .chart-btn {
-    margin: 0.5rem;
+    margin: 0;
     border-radius: 5px;
     font-size: 0.9rem;
     border: none !important;
